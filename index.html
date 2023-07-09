@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENÚ ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mayken</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mí</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/heroe.jpg" alt="" class="imagen-heroe">
+            </div>
+            <h1>Yeison Martinez</h1>
+            <h2>Estudiante de Ingeniería de Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/Jasonms408" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=%2B573015894913" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://www.skype.com/es/" target="_blank">
+                        <i class="fa-brands fa-skype"></i></a>
+                    <a href="https://www.linkedin.com/in/yeison-mayken-martinez-cuenca-66687ab2/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/maykenm7" target="_blank">
+                        <i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p>
+                <span>Hola, soy Yeison Mayken Martinez Cuenca.</span>
+                Estudiante de ingeniería de sistemas de quinto semestre. Con conocimientos en Programación,
+                Bases de Datos y desarrollo Web. Se resaltan habilidades como la iniciativa, la atención al
+                detalle, el mejoramiento continuo y la orientación a resultados.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            15-10-1995
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3015894913
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            maykenm7@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.probando.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Carrera 93D #65 sur 42, Bogotá, Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador Junior</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>Tecnología</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-graduation-cap"></i>
+                            <span>Aprender</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>El deporte</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button onclick="descargarCV()">
+                Descargar CV <i class="fa-solid fa-file-arrow-down"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SKILLS-->
+    <section class="skills" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- HABILIDADES TÉCNICAS -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <!-------------------------------------------------------------------------------------------------->
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------------------------------------------------------------------------->
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------------------------------------------------------------------------->
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso react">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------------------------------------------------------------------------->
+                    <div class="skill">
+                        <span>MySQL y SQL Server</span>
+                        <div class="barra-skill">
+                            <div class="progreso sql">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------------------------------------------------------------------------->
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso java">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------------------------------------------------------------------------->
+                </div>
+                <!-- HABILIDADES PROFESIONALES-->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <!-------------------------------------------------------------------------------------------------->
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------------------------------------------------------------------------->
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajoenequipo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------------------------------------------------------------------------->
+                    <div class="skill">
+                        <span>Tolerancia a la Frustración</span>
+                        <div class="barra-skill">
+                            <div class="progreso toleranciaalafrustracion">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------------------------------------------------------------------------->
+                    <div class="skill">
+                        <span>Alta Capacidad para Resolver Problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso resolverproblemas">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------------------------------------------------------------------------->
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------------------------------------------------------------------------->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="casa">Universidad Nacional Abierta y a Distancia</span>
+                        <span class="flecha">2020 - En curso</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------------------------------------------>
+                    <div class="item izq">
+                        <h4>BOOTCAMP EN DESARROLLO WEB CON REACT</h4>
+                        <span class="casa">AmCham Colombia en alianza con The Howard G. Buffett Foundation
+                            y BIT (Bogotá Institute of Technology)
+                        </span>
+                        <span class="flecha">2023 - Finalizado</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------------------------------------------>
+                    <div class="item izq">
+                        <h4>DIPLOMADO "HABILIDADES EN PROGRAMACIÓN CON ÉNFASIS EN APLICACIONES
+                            WEB"</h4>
+                        <span class="casa">Ministerio TIC en alianza con la Universidad de Caldas</span>
+                        <span class="flecha">2022 - Finalizado</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------------------------>
+                <div class="col derecha">
+                    <h3>Experiencia de Trabajo</h3>
+                    <div class="item der">
+                        <h4>Bootcamp</h4>
+                        <span class="casa">AMCHAM COLOMBIA EN ALIANZA CON THE HOWARD G. BUFFETT FOUNDATION Y BIT
+                            (BOGOTÁ INSTITUTE OF TECHNOLOGY)</span>
+                        <span class="flecha">2023 - Terminado</span>
+                        <p>Proyecto Final: Creación de una landing page en React</p>
+                        <p>Tecnologías usadas: React. Node.js.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------------------------------------------>
+                    <div class="item der">
+                        <h4>Diplomado</h4>
+                        <span class="casa">MINISTERIO TIC EN ALIANZA CON LA UNIVERSIDAD DE CALDAS</span>
+                        <span class="flecha">2022 - Terminado</span>
+                        <p>Proyecto Final: Desarrollo de un E-commerce utilizando el stack MERN.</p>
+                        <p>Tecnologías usadas: MongoDB, Express JS, React, Node.js.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------------------------------------------>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <!-------------------------------------------------------------------------------------------------->
+                <div class="proyecto">
+                    <img src="img/react.jpg" alt="imagen de react">
+                    <div class="overlay">
+                        <h3>Desarrollo web con React</h3>
+                        <p>Conocimientos en el uso de componentes, estado y enrutamiento con React</p>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------------------------->
+                <div class="proyecto">
+                    <img src="img/mern.png" alt="imagen de mern">
+                    <div class="overlay">
+                        <h3>Aplicaciones con el stack MERN</h3>
+                        <p>MongoDB, Express JS, React, Node.js</p>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------------------------->
+                <div class="proyecto">
+                    <img src="img/habilidades_programacion.jpg" alt="imagen de Habilidades en programación">
+                    <div class="overlay">
+                        <h3>Habilidades en programación</h3>
+                        <p>Conocimientos en lenguajes de programación como JavaScript, Python y Java</p>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------------------------->
+                <div class="proyecto">
+                    <img src="img/diseño_web_&_UX_UI.jpg" alt="imagen de Diseño web y UX/UI">
+                    <div class="overlay">
+                        <h3>Diseño web y UX/UI</h3>
+                        <p>Conocimientos en diseño web y experiencia de usuario</p>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------------------------->
+                <div class="proyecto">
+                    <img src="img/bbdd.jpg" alt="imagen de BBDD">
+                    <div class="overlay">
+                        <h3>Gestión de bases de datos</h3>
+                        <p>Manejo de bases de datos relacionales (MySQL) y no relacionales (MongoDB)</p>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------------------------->
+                <div class="proyecto">
+                    <img src="img/metodologias_agiles.jpg" alt="imagen de metodologías ágiles">
+                    <div class="overlay">
+                        <h3>Metodologías ágiles</h3>
+                        <p>Familiaridad con metodologías ágiles de desarrollo de software, como Scrum o Kanban</p>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------------------------->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <div class="input-container">
+                        <input type="text" placeholder="Digita tu nombre" id="nombre">
+                        <span class="error-message" id="error-nombre"></span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Número telefónico" id="telefono">
+                        <span class="error-message" id="error-telefono"></span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Correo electrónico" id="correo">
+                        <span class="error-message" id="error-correo"></span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Tema" id="tema">
+                        <span class="error-message" id="error-tema"></span>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <span class="error-message" id="error-mensaje"></span>
+                    </div>
+                    <button id="enviar">
+                        Enviar mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="ubicación">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bogotá, Bosa el Recreo
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Llámame o envíame un WhatsApp: +57 3015894913
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: maykenm7@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Sígueme en mis redes sociales:</p>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/Jasonms408" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=%2B573015894913" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://www.skype.com/es/" target="_blank">
+                    <i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com/in/yeison-mayken-martinez-cuenca-66687ab2/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/maykenm7" target="_blank">
+                    <i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
